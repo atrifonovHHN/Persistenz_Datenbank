@@ -1,0 +1,66 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.jar
+
+# Jetpack Compose
+.idea/
+.idea/*/
+*.iml
+*.hprof
+**/.DS_Store
+**/local.properties
+**/captures/
+
+# Android Studio
+.gradle/
+.idea/
+*.iml
+.gradle/
+local.properties
+.idea/workspace.xml
+.idea/libraries
+.idea/modules.xml
+.idea/.name
+.idea/misc.xml
+.idea/caches/
+.idea/assetWizardSettings.xml
+.idea/androidStudioFirstRun.xml
+.idea/codeStyles/
+.idea/inspectionProfiles/
+.idea/dictionaries/
+.idea/httpRequests/
+.idea/codestyles.xml
+.idea/compiler.xml
+.idea/vcs.xml
+.idea/deployment.xml
+.idea/tasks.xml
+.idea/uiDesigner.xml
+.idea/spelling.xml
+.idea/watcherTasks.xml
+.idea/runConfigurations/
+
+# Kotlin
+*.kotlin_metadata
+*.kotlin_module
+
+# JetBrains Tools
+*.ipr
+*.iws
+
+# Logs
+*.log
+
+# Keystore files
+*.keystore
+*.jks
+
+# DBeaver
+.dbeaver/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.class
