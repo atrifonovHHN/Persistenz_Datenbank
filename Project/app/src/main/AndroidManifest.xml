@@ -12,14 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Persistenz_Datenbanken"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.persistenz_datenbanken.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Persistenz_Datenbanken">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

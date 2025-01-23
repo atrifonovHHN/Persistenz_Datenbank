@@ -6,12 +6,13 @@ plugins {
 
 android {
     namespace = "com.example.persistenz_datenbanken"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.persistenz_datenbanken"
         minSdk = 26
-        targetSdk = 34
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -41,6 +42,33 @@ android {
 
 dependencies {
 
+    implementation(libs.ui)
+    implementation(libs.material3) // Material Design 3
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.androidx.foundation)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.material) // Material Design Components
+    implementation(libs.androidx.navigation.compose) // Navigation zwischen Screens
+
+
+    // To enable preview
+    debugImplementation(libs.ui.tooling)
+    debugImplementation(libs.ui.tooling.preview)
+
+    // SQLite Database
+    implementation(libs.androidx.sqlite)  // SQLite für Android
+
+    // ViewModel und LiveData für UI Zustand
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // Kotlin Coroutines für asynchrone Verarbeitung
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Kotlin Standard Library
+    implementation(libs.kotlin.stdlib)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -49,6 +77,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.foundation.layout.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
